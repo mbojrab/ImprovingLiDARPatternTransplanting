@@ -1,0 +1,10 @@
+name: sim-sensors
+channels:
+  - main
+  - conda-forge
+dependencies:
+  - numpy=1.19.2
+  - python=3.7.9
+  - tensorflow-gpu=2.2
+  - tqdm=4.54.1
+
