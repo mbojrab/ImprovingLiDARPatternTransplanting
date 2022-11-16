@@ -2,7 +2,7 @@
 
 Official tensorflow implementation of "Improving LiDAR Fidelity Using Pattern Transplanting. Bojrab et al. T-ITS 2022."
 
-This paper reviews the use of ground and aerial LiDAR collection for the purpose of HD Map creation for Autonomous Driving. We propose a novel data preparation to convert 4D LiDAR to two-channel, 2.5D imagery. This preparation provides the means to transfer degradation patterns between collections without temporal or spatial overlap. We call this Pattern Transplanting. The dimensionality reducing preparation allows our modified UNet to achieve highly accurate results in both Depth and Reflectance channels.
+This paper reviews the use of ground and aerial LiDAR collection for the purpose of HD Map creation for Autonomous Driving. We propose a novel data preparation to convert 4D LiDAR to two-channel, 2.5D imagery. This preparation provides the means to transfer degradation patterns between collections without temporal or spatial overlap. We call this Pattern Transplanting. The dimensionality reducing LiDAR preparation allows our modified UNet to achieve highly accurate results in both Depth and Reflectance channels.
 
 ## Source Code
 main.py         -- The top-level python script to run for training models.\
@@ -32,6 +32,10 @@ unet.py         -- Unbalanced, multi-stream UNet architecture with scriptable op
 --random-mask turns on the randomization of masking with the same number of pixels dropped as the scanner pattern.*
 
 ## The Data
-The dataset with random selection achieves ~1.2M unique training example combinations. We provide the tfrecord files for our data, and pipeline.py provides code to read and prepare the training data.
+The dataset with random selection achieves ~1.2M unique training example combinations. We provide the tfrecord files for our data, and pipeline.py provides code to read and prepare the training data. The records are too large for github, so they must be downloaded separately:
+
+[Download Dataset Now - 1.4 GB](https://improving-lidar-fidelity.s3.us-east-2.amazonaws.com/using/pattern-transplanting.zip)
+
+Unzip into ./ImprovingLiDARFidelityUsingPatternTransplanting/data/*
 
 A few image examples are provided in the directory for visualization purposes only.
