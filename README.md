@@ -36,6 +36,6 @@ The dataset with random selection achieves ~1.2M unique training example combina
 
 [Download Dataset Now - 1.4 GB](https://improving-lidar-fidelity.s3.us-east-2.amazonaws.com/using/pattern-transplanting.zip)
 
-Unzip into ./ImprovingLiDARFidelityUsingPatternTransplanting/data/*
+Unzip into ./ImprovingLiDARPatternTransplanting/data/*
 
 A few image examples are provided in the directory for visualization purposes only.
