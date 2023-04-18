@@ -32,10 +32,11 @@ unet.py         -- Unbalanced, multi-stream UNet architecture with scriptable op
 --random-mask turns on the randomization of masking with the same number of pixels dropped as the scanner pattern.*
 
 ## The Data
-The dataset with random selection achieves ~1.2M unique training example combinations. We provide the tfrecord files for our data, and pipeline.py provides code to read and prepare the training data. The records are too large for github, so they must be downloaded separately:
+The dataset with random selection achieves ~1.2M unique training example combinations. We provide the tfrecord files for our data, and pipeline.py provides code to read and prepare the training data. The records are stored in a separate repository for convenience:
 
-[Download Dataset Now - 1.4 GB](https://improving-lidar-fidelity.s3.us-east-2.amazonaws.com/using/pattern-transplanting.zip)
+[Download Dataset Now - 1.4 GB](https://github.com/mbojrab/ImprovingLiDARPatternTransplanting)
 
-Unzip into ./ImprovingLiDARPatternTransplanting/data/*
+Clone into ./ImprovingLiDARPatternTransplanting/data/*
+NOTE: TFRecords are supplied as multi-part 7z. Unpack all four 7z files to use them.
 
 A few image examples are provided in the directory for visualization purposes only.
